@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        CALCULATOR
+    </h1>
+
+
+    <div class="conatiner">
+
+        <div class="subContainer">
+            <table border="1px" cellspacing="10px">
+                <tr>
+                    <td colspan="5">
+                        <p class="mainScreen" id="display">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="SetDataToScreen('+')">+</button> </td>
+                    <td><button onclick="SetDataToScreen('*')">*</button> </td>
+                    <td><button onclick="SetDataToScreen('-')">-</button> </td>
+                    <td><button onclick="SetDataToScreen('/')">/</button> </td>
+                    <td><button onclick="clearAll()">C</button> </td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="SetDataToScreen(7)">7</button></td>
+                    <td><button onclick="SetDataToScreen(8)">8</button></td>
+                    <td><button onclick="SetDataToScreen(9)">9</button></td>
+                    <td colspan="2" rowspan="2"><button class="EqualButton" onclick="calculateval()">=</button></td>
+
+
+                </tr>
+                <tr>
+                    <td><button onclick="SetDataToScreen(4)">4</button></td>
+                    <td><button onclick="SetDataToScreen(5)">5</button></td>
+                    <td><button onclick="SetDataToScreen(6)">6</button></td>
+
+
+                </tr>
+                <tr>
+                    <td><button onclick="SetDataToScreen(1)">1</button></td>
+                    <td><button onclick="SetDataToScreen(2)">2</button></td>
+                    <td><button onclick="SetDataToScreen(3)">3 </button></td>
+                    <td colspan="2">
+                        <button class="zeroButton" onclick="SetDataToScreen(0)">0</button>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
